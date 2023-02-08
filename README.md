@@ -9,7 +9,7 @@ glue.js is a library to help with implementation of ESM modules into commonJS or
 
 ## Installation
 
-`npm i glue-js`
+`npm i jsglue`
 
 Note: glue.js is currently only works on **node**.
 

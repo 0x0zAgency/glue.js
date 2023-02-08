@@ -1,6 +1,6 @@
 {
-  "name": "glue-js",
-  "version": "0.0.1",
+  "name": "jsglue",
+  "version": "0.0.2",
   "description": "A package which aims to solve integration issues with CJS modules to MJS modules",
   "main": "src/index.js",
   "scripts": {
