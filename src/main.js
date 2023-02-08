@@ -1,5 +1,5 @@
 /**
- * @type {import("./utils/wrapper.mjs")}
+ * @type {import("jsglue/src/utils/wrapper.mjs")}
  */
 let wrapper;
 
@@ -15,7 +15,7 @@ module.exports.get = async (nodeModule) => {
 };
 
 /**
- * @returns {Promise<import("./utils/wrapper.mjs")>}
+ * @returns {Promise<import("jsglue/src/utils/wrapper.mjs")>}
  */
 module.exports.load = async () => {
   wrapper = await import("./utils/wrapper.mjs");
@@ -24,7 +24,7 @@ module.exports.load = async () => {
 };
 
 /**
- * @returns {Promise<import("./utils/wrapper.mjs")>}
+ * @returns {Promise<import("jsglue/src/utils/wrapper.mjs")>}
  */
 module.exports.wrapper = async () => {
   if (wrapper) return wrapper;

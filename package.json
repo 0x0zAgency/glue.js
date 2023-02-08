@@ -1,8 +1,8 @@
 {
   "name": "jsglue",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A package which aims to solve integration issues with CJS modules to MJS modules",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
