@@ -23,4 +23,9 @@ module.exports.load = async () => {
 /**
  * @type {import("./utils/wrapper.mjs")}
  */
-module.exports.wrapper = () => wrapper;
+module.exports.wrapper = async () => {
+  if (wrapper) return wrapper;
+  wrapper = await import("./utils/wrapper.mjs");
+  await wrapper.loadPackages();
+  return wrapper;
+};
