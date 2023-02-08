@@ -1,0 +1,33 @@
+{
+  "name": "glue.js",
+  "version": "0.0.1",
+  "description": "A package which aims to solve integration issues with CJS modules to MJS modules",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x0zAgency/glue.js.git"
+  },
+  "author": "Llydia Cross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0x0zAgency/glue.js/issues"
+  },
+  "glue": {
+    "ipfs-core": true
+  },
+  "browserslist": "> 0.25%, not dead",
+  "homepage": "https://github.com/0x0zAgency/glue.js#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-transform-modules-commonjs": "^7.20.11",
+    "@babel/preset-env": "^7.20.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ipfs-core": "^0.18.0"
+  }
+}

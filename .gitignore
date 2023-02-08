@@ -1,0 +1,8 @@
+# The build stuff
+/lib/
+
+# Node Modules
+/node_modules/
+
+# Env Stuff
+.env
