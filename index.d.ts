@@ -13,6 +13,6 @@ declare module "jsglue" {
    * @param nodeModule
    */
   export function get(nodeModule: string): Promise<any>;
-  export function load(): Promise<typeof import("./src/utils/wrapper.mjs")>;
-  export function wrapper(): Promise<typeof import("./src/utils/wrapper.mjs")>;
+  export function load(): Promise<typeof import("./src/utils/wrapper.d")>;
+  export function wrapper(): Promise<typeof import("./src/utils/wrapper.d")>;
 }
