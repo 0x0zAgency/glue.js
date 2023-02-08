@@ -14,6 +14,9 @@ module.exports.get = async (nodeModule) => {
   return wrapper.get(nodeModule);
 };
 
+/**
+ * @returns {Promise<import("./utils/wrapper.mjs")>}
+ */
 module.exports.load = async () => {
   wrapper = await import("./utils/wrapper.mjs");
   await wrapper.loadPackages();
@@ -21,11 +24,9 @@ module.exports.load = async () => {
 };
 
 /**
- * @type {import("./utils/wrapper.mjs")}
+ * @returns {Promise<import("./utils/wrapper.mjs")>}
  */
 module.exports.wrapper = async () => {
   if (wrapper) return wrapper;
-  wrapper = await import("./utils/wrapper.mjs");
-  await wrapper.loadPackages();
-  return wrapper;
+  return await module.exports.load();
 };

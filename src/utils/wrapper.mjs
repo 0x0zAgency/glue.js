@@ -3,6 +3,7 @@ import fs from 'fs';
 
 let packages = {};
 let cache = {};
+let isLoading = false;
 
 export const isDebug = () => {
   return process.env.GLUE_DEBUG === "true";
@@ -85,6 +86,18 @@ export const loadPackages = async () => {
     
     let keys = Object.keys(packages.glue);
     for (let i = 0; i < keys.length; i++) {
+
+        if (!packages.glue[keys[i]]) {
+
+            if (isDebug())
+                console.log('loadPackages', keys[i], 'not found');
+    
+            continue;
+        }
+
+        if (isDebug())
+            console.log('loadPackages', keys[i]);
+
         await requireModule(keys[i]);  
     }
 }

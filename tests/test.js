@@ -1,9 +1,7 @@
 const glue = require("../index");
 
 (async () => {
-  let ipfsCore = (await glue.load()).getSync("ipfs-core");
-
+  let wrapper = await glue.wrapper();
+  let ipfsCore = await wrapper.get("ipfs-core");
   console.log(ipfsCore);
-  let ipfs = await ipfsCore.create();
-  console.log(ipfs);
 })();
