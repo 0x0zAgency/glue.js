@@ -1,9 +1,7 @@
 import fs from 'fs';
 
-
 let packages = {};
 let cache = {};
-let isLoading = false;
 
 export const isDebug = () => {
   return process.env.GLUE_DEBUG === "true";
