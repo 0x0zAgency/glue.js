@@ -20,14 +20,7 @@
   },
   "browserslist": "> 0.25%, not dead",
   "homepage": "https://github.com/0x0zAgency/glue.js#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.20.7",
-    "@babel/core": "^7.20.12",
-    "@babel/plugin-transform-modules-commonjs": "^7.20.11",
-    "@babel/preset-env": "^7.20.2"
-  },
   "dependencies": {
-    "dotenv": "^16.0.3",
-    "ipfs-core": "^0.18.0"
+    "dotenv": "^16.0.3"
   }
 }
