@@ -90,7 +90,7 @@ export const loadPackages = async () => {
         if (!packages.glue[keys[i]]) {
 
             if (isDebug())
-                console.log('loadPackages', keys[i], 'not found');
+                console.log('loadPackages', keys[i], 'ignored');
     
             continue;
         }
